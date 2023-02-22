@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paso de la Patria</title>
+    <link rel="stylesheet" type="text/css" href="Estilos/reset.css">
+    <link rel="stylesheet" type="text/css" href="Estilos/styles.css">
+    <link rel="stylesheet" href="Estilos/font-awesome.min.css">
+    <link rel="stylesheet" href="/Estilos/style.css">
+    
+    <script>
+        //Seleccionamos el elemento nav
+let nav = document.querySelector('.main-nav');
+
+//Agregamos el evento click al elemento nav
+nav.addEventListener('click', function() {
+    //toggle la clase "expanded" al elemento nav
+    nav.classList.toggle('expanded');
+});
+
+    </script>
+</head>
+<body>
+    <div class="social-body">
+        <ul>
+            <li class="facebook"><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+            <li class="whatsapp"><a href="#" target="_blank"><i class="fa fa-whatsapp"></i></a></li>
+            <li class="twitter"><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+            <li class="instagram"><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
+            <li class="pinterest"><a href="#" target="_blank"><i class="fa fa-pinterest"></i></a></li>
+        </ul>
+    </div>
+    <header class="main-header">
+        <nav class="main-nav">
+            <div class="logo">
+                <span>
+                    MyLogo
+                </span>
+
+            </div>
+            <ul>
+                <li><a href="#0">Inicio</a></li>
+                <li><a href="/Subindices/Destinos.html">Destinos</a></li>
+                <li><a href="/Subindices/Blog.html">Blog</a></li>
+                <li><a href="/Subindices/Contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="content-header">
+            <h1>Cabañas Paso de la Patria</h1>
+            <p>La mejor manera de encontrar una cabaña para tu finde!</p>
+            <a href="./Subindices/Reserva.html">Reservar Ahora</a>
+        </div>
+        
+      
+    </header>
+
+    
+</body>
+</html>

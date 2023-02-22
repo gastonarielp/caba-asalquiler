@@ -1,0 +1,170 @@
+/*///////////////////////*ESQUEMA GENERAL///////////////////////*/
+@import url('https://images.pexels.com/photos/2749481/pexels-photo-2749481.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+*{
+    box-sizing: border-box;
+}
+.main-header{
+    background: 
+    linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,3)), 
+    url(https://images.pexels.com/photos/2749481/pexels-photo-2749481.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    font-family: 'Dosis', sans-serif;
+    position: relative;
+    overflow: hidden;
+}
+ .main-nav {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,7));
+    display: flex;
+
+ }
+ .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 6.25em;
+    padding: 1.25em 0.3em;
+    font-size: 1.3rem;
+    color:white;
+ }
+ /*BARRA BOTONES PERMANENTE*/
+ ul{
+    background: transparent;
+    display: flex;
+    margin-left: auto;
+    margin-right: 6.25em;
+ }
+ ul li a {  
+    display: inline-block;
+    padding: 1.25em 1.3em;
+    font-size: 1.3rem;
+    color:white;
+    border-radius: 1.3em;
+ }
+ ul li a:hover{
+    background: #4741d7;
+ }
+ 
+ .content-header{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+ }
+ .content-header h1{
+    font-size: 5rem;
+ }
+ .content-header p{
+    font-size: 1.5rem;
+    margin: 1em 3em;
+ }
+ .content-header a{
+    font-size: 1.3rem;
+    display: inline-block;
+    padding: 1.25em 1.3em;
+    background: rgb(47, 91, 235);
+    color:white;
+    
+
+}
+
+.content-header a {
+    background: #fff; /* color de fondo */
+    color: #4741d7; /* color de fuente */
+    border: 0.09em solid #4741d7; /* tamaño y color de borde */
+    padding: 0.7em 1em;
+    border-radius: 1em; /* redondear bordes */
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: inline-block;
+    border-radius: 1.3em;
+  }
+  .content-header a:hover {
+    color: #fff; /* color de fuente hover */
+  }
+  .content-header a::after {
+    content: "";
+    background: #4741d7; /* color de fondo hover */
+    position: absolute;
+    z-index: -1;
+    padding: 0.7em 1em;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    right: 100%;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+  }
+  .content-header a:hover::after {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+  }
+  /*///////////////////////DESTINOS///////////////////////*/
+  .map {
+   display: inline-block;
+   position: absolute;
+   left: 22em;
+   
+   border-radius: 3rem;
+  }
+  /*///////////////////////SOCIAL-BAR///////////////////////*/
+  .social-bar {
+	position: fixed;
+	right: 0;
+	top: 35%;
+	font-size: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	z-index: 100;
+}
+
+.icon {
+	color: white;
+	text-decoration: none;
+	padding: .7rem;
+	display: flex;
+	transition: all .5s;
+}
+
+.icon-facebook {
+	background: #2E406E;
+}
+
+.icon-twitter {
+	background: #339DC5;
+}
+
+.icon-youtube {
+	background: #E83028;
+}
+
+.icon-instagram {
+	background: #3F60A5;
+}
+
+.icon:first-child {
+	border-radius: 1rem 0 0 0;
+}
+
+.icon:last-child {
+	border-radius: 0 0 0 1rem;
+}
+
+.icon:hover {
+	padding-right: 3rem;
+	border-radius: 1rem 0 0 1rem;
+	box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.42);
+}
